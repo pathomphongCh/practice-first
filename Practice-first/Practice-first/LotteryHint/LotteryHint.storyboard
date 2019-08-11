@@ -1,7 +1,91 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="djT-t4-E96">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Lottery Hint Controller-->
+        <scene sceneID="83h-dd-EhH">
+            <objects>
+                <viewController storyboardIdentifier="Lottery" id="djT-t4-E96" customClass="LotteryHintController" customModule="Practice_first" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Apv-AZ-sLx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lottery Hint App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0i0-1Q-C38">
+                                <rect key="frame" x="0.0" y="64" width="414" height="43"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7T-LR-fel">
+                                <rect key="frame" x="107" y="398" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7NQ-MM-kme"/>
+                                    <constraint firstAttribute="height" constant="100" id="kQO-CS-Ftn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Lucky Lottery App, Good luck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59N-lY-z2c">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="o6H-k1-JLw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUC-FU-q2O">
+                                <rect key="frame" x="126" y="736" width="162" height="46"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
+                                <state key="normal" title="Lucky Number">
+                                    <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PressedLimitation:" destination="djT-t4-E96" eventType="touchDragInside" id="6l7-pR-5iP"/>
+                                    <action selector="PressedRandomColor" destination="djT-t4-E96" eventType="touchUpInside" id="p8L-q5-XVZ"/>
+                                    <action selector="PressedRandomNumber" destination="djT-t4-E96" eventType="touchUpInside" id="U1a-Su-knp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0i0-1Q-C38" firstAttribute="leading" secondItem="P49-yi-jyh" secondAttribute="leading" id="B4u-rY-HZg"/>
+                            <constraint firstItem="0i0-1Q-C38" firstAttribute="top" secondItem="P49-yi-jyh" secondAttribute="top" constant="20" id="C9D-aW-u9P"/>
+                            <constraint firstItem="59N-lY-z2c" firstAttribute="top" secondItem="mUC-FU-q2O" secondAttribute="bottom" constant="30" id="VNM-71-VK3"/>
+                            <constraint firstItem="59N-lY-z2c" firstAttribute="leading" secondItem="P49-yi-jyh" secondAttribute="leading" id="XSl-sf-0mO"/>
+                            <constraint firstItem="a7T-LR-fel" firstAttribute="centerX" secondItem="Apv-AZ-sLx" secondAttribute="centerX" id="eyR-HI-LWM"/>
+                            <constraint firstItem="P49-yi-jyh" firstAttribute="trailing" secondItem="0i0-1Q-C38" secondAttribute="trailing" id="fvg-gf-j3l"/>
+                            <constraint firstItem="mUC-FU-q2O" firstAttribute="centerX" secondItem="Apv-AZ-sLx" secondAttribute="centerX" id="giE-eu-aRt"/>
+                            <constraint firstItem="59N-lY-z2c" firstAttribute="bottom" secondItem="P49-yi-jyh" secondAttribute="bottom" id="iMr-Z3-IF5"/>
+                            <constraint firstItem="0i0-1Q-C38" firstAttribute="centerX" secondItem="Apv-AZ-sLx" secondAttribute="centerX" id="id7-hS-7sz"/>
+                            <constraint firstItem="a7T-LR-fel" firstAttribute="centerY" secondItem="Apv-AZ-sLx" secondAttribute="centerY" id="njW-zF-250"/>
+                            <constraint firstItem="59N-lY-z2c" firstAttribute="trailing" secondItem="P49-yi-jyh" secondAttribute="trailing" id="rDx-1q-GTU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P49-yi-jyh"/>
+                    </view>
+                    <connections>
+                        <outlet property="LotteryNumber" destination="a7T-LR-fel" id="2OE-q6-pKc"/>
+                        <outlet property="RandomButton" destination="mUC-FU-q2O" id="iZ9-U9-kGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGK-ha-zAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="142"/>
+        </scene>
+    </scenes>
 </document>

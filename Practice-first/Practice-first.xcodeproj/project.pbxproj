@@ -14,6 +14,8 @@
 		74D9FEF722FEEE0F00FE2E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D9FEF522FEEE0F00FE2E2F /* LaunchScreen.storyboard */; };
 		74D9FF0222FEEE0F00FE2E2F /* Practice_firstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9FF0122FEEE0F00FE2E2F /* Practice_firstTests.swift */; };
 		74D9FF0D22FEEE0F00FE2E2F /* Practice_firstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9FF0C22FEEE0F00FE2E2F /* Practice_firstUITests.swift */; };
+		74D9FF1B22FEEE7600FE2E2F /* LotteryHintController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9FF1A22FEEE7600FE2E2F /* LotteryHintController.swift */; };
+		74D9FF1E22FEEEDC00FE2E2F /* LotteryHint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D9FF1D22FEEEDC00FE2E2F /* LotteryHint.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		74D9FF0822FEEE0F00FE2E2F /* Practice-firstUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Practice-firstUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D9FF0C22FEEE0F00FE2E2F /* Practice_firstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_firstUITests.swift; sourceTree = "<group>"; };
 		74D9FF0E22FEEE0F00FE2E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D9FF1A22FEEE7600FE2E2F /* LotteryHintController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryHintController.swift; sourceTree = "<group>"; };
+		74D9FF1D22FEEEDC00FE2E2F /* LotteryHint.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LotteryHint.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		74D9FEEB22FEEE0E00FE2E2F /* Practice-first */ = {
 			isa = PBXGroup;
 			children = (
+				74D9FF1C22FEEE8D00FE2E2F /* LotteryHint */,
 				74D9FEEC22FEEE0E00FE2E2F /* AppDelegate.swift */,
 				74D9FEEE22FEEE0E00FE2E2F /* ViewController.swift */,
 				74D9FEF022FEEE0E00FE2E2F /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				74D9FF0E22FEEE0F00FE2E2F /* Info.plist */,
 			);
 			path = "Practice-firstUITests";
+			sourceTree = "<group>";
+		};
+		74D9FF1C22FEEE8D00FE2E2F /* LotteryHint */ = {
+			isa = PBXGroup;
+			children = (
+				74D9FF1A22FEEE7600FE2E2F /* LotteryHintController.swift */,
+				74D9FF1D22FEEEDC00FE2E2F /* LotteryHint.storyboard */,
+			);
+			path = LotteryHint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +246,7 @@
 				74D9FEF722FEEE0F00FE2E2F /* LaunchScreen.storyboard in Resources */,
 				74D9FEF422FEEE0F00FE2E2F /* Assets.xcassets in Resources */,
 				74D9FEF222FEEE0E00FE2E2F /* Main.storyboard in Resources */,
+				74D9FF1E22FEEEDC00FE2E2F /* LotteryHint.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74D9FEEF22FEEE0E00FE2E2F /* ViewController.swift in Sources */,
+				74D9FF1B22FEEE7600FE2E2F /* LotteryHintController.swift in Sources */,
 				74D9FEED22FEEE0E00FE2E2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

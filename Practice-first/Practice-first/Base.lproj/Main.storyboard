@@ -1,24 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="52Y-W5-rLG">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="xmh-yP-Odg">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="52Y-W5-rLG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WKM-wP-1sv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vB9-YL-U2u" kind="relationship" relationship="rootViewController" id="TZL-bY-FJA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xlq-dp-C8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-788" y="368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aDZ-Jn-1eu">
+            <objects>
+                <viewController id="vB9-YL-U2u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rBd-Cy-7Ii">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fal-Uy-3mh">
+                                <rect key="frame" x="163" y="429.5" width="88" height="37"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="LotteryHint"/>
+                                <connections>
+                                    <segue destination="h7x-3W-Dv4" kind="show" id="3fr-kh-6R7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fal-Uy-3mh" firstAttribute="centerX" secondItem="rBd-Cy-7Ii" secondAttribute="centerX" id="Knu-ae-EDx"/>
+                            <constraint firstItem="fal-Uy-3mh" firstAttribute="centerY" secondItem="rBd-Cy-7Ii" secondAttribute="centerY" id="O9g-DA-6QM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hR9-mq-Da8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZGx-8v-TEM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1M4-28-mwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="368"/>
+        </scene>
+        <!--LotteryHint-->
+        <scene sceneID="sR1-lB-3Qq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LotteryHint" id="h7x-3W-Dv4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJ8-Pc-lZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571" y="368"/>
         </scene>
     </scenes>
 </document>
