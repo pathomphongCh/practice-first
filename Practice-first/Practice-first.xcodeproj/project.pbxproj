@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7409063722FFC7BC00AEBF51 /* TodoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7409063622FFC7BC00AEBF51 /* TodoListController.swift */; };
+		7409063922FFC80500AEBF51 /* Todolist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7409063822FFC80500AEBF51 /* Todolist.storyboard */; };
+		7409063B22FFD64C00AEBF51 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7409063A22FFD64C00AEBF51 /* TodoItem.swift */; };
+		7409063D230076D100AEBF51 /* TodoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7409063C230076D100AEBF51 /* TodoItemTableViewCell.swift */; };
+		74354D942300B4E600AF87D4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74354D932300B4E600AF87D4 /* DetailViewController.swift */; };
+		74354D962300B50B00AF87D4 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74354D952300B50B00AF87D4 /* DetailView.storyboard */; };
+		74354D9923014E2800AF87D4 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74354D9823014E2800AF87D4 /* Joke.swift */; };
+		74354D9B23014F3500AF87D4 /* RandomJokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74354D9A23014F3500AF87D4 /* RandomJokeController.swift */; };
+		74354D9D23014FF100AF87D4 /* RandomJoke.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74354D9C23014FF100AF87D4 /* RandomJoke.storyboard */; };
+		74354DA02301B85A00AF87D4 /* CollectColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74354D9F2301B85A00AF87D4 /* CollectColorController.swift */; };
+		74354DA22301B87800AF87D4 /* CollectColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74354DA12301B87800AF87D4 /* CollectColor.storyboard */; };
+		74354DA42301BFBD00AF87D4 /* CollectColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74354DA32301BFBD00AF87D4 /* CollectColorCell.swift */; };
 		74D9FEED22FEEE0E00FE2E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9FEEC22FEEE0E00FE2E2F /* AppDelegate.swift */; };
 		74D9FEEF22FEEE0E00FE2E2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9FEEE22FEEE0E00FE2E2F /* ViewController.swift */; };
 		74D9FEF222FEEE0E00FE2E2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D9FEF022FEEE0E00FE2E2F /* Main.storyboard */; };
@@ -36,6 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7409063622FFC7BC00AEBF51 /* TodoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListController.swift; sourceTree = "<group>"; };
+		7409063822FFC80500AEBF51 /* Todolist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todolist.storyboard; sourceTree = "<group>"; };
+		7409063A22FFD64C00AEBF51 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		7409063C230076D100AEBF51 /* TodoItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemTableViewCell.swift; sourceTree = "<group>"; };
+		74354D932300B4E600AF87D4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		74354D952300B50B00AF87D4 /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
+		74354D9823014E2800AF87D4 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		74354D9A23014F3500AF87D4 /* RandomJokeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeController.swift; sourceTree = "<group>"; };
+		74354D9C23014FF100AF87D4 /* RandomJoke.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RandomJoke.storyboard; sourceTree = "<group>"; };
+		74354D9F2301B85A00AF87D4 /* CollectColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectColorController.swift; sourceTree = "<group>"; };
+		74354DA12301B87800AF87D4 /* CollectColor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectColor.storyboard; sourceTree = "<group>"; };
+		74354DA32301BFBD00AF87D4 /* CollectColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectColorCell.swift; sourceTree = "<group>"; };
 		74D9FEE922FEEE0E00FE2E2F /* Practice-first.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Practice-first.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D9FEEC22FEEE0E00FE2E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74D9FEEE22FEEE0E00FE2E2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +102,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7409063522FFC79D00AEBF51 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				7409063622FFC7BC00AEBF51 /* TodoListController.swift */,
+				74354D932300B4E600AF87D4 /* DetailViewController.swift */,
+				74354D952300B50B00AF87D4 /* DetailView.storyboard */,
+				7409063C230076D100AEBF51 /* TodoItemTableViewCell.swift */,
+				7409063822FFC80500AEBF51 /* Todolist.storyboard */,
+				7409063A22FFD64C00AEBF51 /* TodoItem.swift */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		74354D9723014A7D00AF87D4 /* RandomJoke */ = {
+			isa = PBXGroup;
+			children = (
+				74354D9823014E2800AF87D4 /* Joke.swift */,
+				74354D9A23014F3500AF87D4 /* RandomJokeController.swift */,
+				74354D9C23014FF100AF87D4 /* RandomJoke.storyboard */,
+			);
+			path = RandomJoke;
+			sourceTree = "<group>";
+		};
+		74354D9E2301B7CF00AF87D4 /* CollectionColor */ = {
+			isa = PBXGroup;
+			children = (
+				74354D9F2301B85A00AF87D4 /* CollectColorController.swift */,
+				74354DA12301B87800AF87D4 /* CollectColor.storyboard */,
+				74354DA32301BFBD00AF87D4 /* CollectColorCell.swift */,
+			);
+			path = CollectionColor;
+			sourceTree = "<group>";
+		};
 		74D9FEE022FEEE0E00FE2E2F = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +158,9 @@
 		74D9FEEB22FEEE0E00FE2E2F /* Practice-first */ = {
 			isa = PBXGroup;
 			children = (
+				74354D9E2301B7CF00AF87D4 /* CollectionColor */,
+				74354D9723014A7D00AF87D4 /* RandomJoke */,
+				7409063522FFC79D00AEBF51 /* TodoList */,
 				74D9FF1C22FEEE8D00FE2E2F /* LotteryHint */,
 				74D9FEEC22FEEE0E00FE2E2F /* AppDelegate.swift */,
 				74D9FEEE22FEEE0E00FE2E2F /* ViewController.swift */,
@@ -244,9 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				74D9FEF722FEEE0F00FE2E2F /* LaunchScreen.storyboard in Resources */,
+				74354DA22301B87800AF87D4 /* CollectColor.storyboard in Resources */,
 				74D9FEF422FEEE0F00FE2E2F /* Assets.xcassets in Resources */,
+				74354D9D23014FF100AF87D4 /* RandomJoke.storyboard in Resources */,
+				74354D962300B50B00AF87D4 /* DetailView.storyboard in Resources */,
 				74D9FEF222FEEE0E00FE2E2F /* Main.storyboard in Resources */,
 				74D9FF1E22FEEEDC00FE2E2F /* LotteryHint.storyboard in Resources */,
+				7409063922FFC80500AEBF51 /* Todolist.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,9 +335,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7409063B22FFD64C00AEBF51 /* TodoItem.swift in Sources */,
 				74D9FEEF22FEEE0E00FE2E2F /* ViewController.swift in Sources */,
+				7409063D230076D100AEBF51 /* TodoItemTableViewCell.swift in Sources */,
+				74354D9B23014F3500AF87D4 /* RandomJokeController.swift in Sources */,
+				74354DA02301B85A00AF87D4 /* CollectColorController.swift in Sources */,
+				7409063722FFC7BC00AEBF51 /* TodoListController.swift in Sources */,
 				74D9FF1B22FEEE7600FE2E2F /* LotteryHintController.swift in Sources */,
 				74D9FEED22FEEE0E00FE2E2F /* AppDelegate.swift in Sources */,
+				74354DA42301BFBD00AF87D4 /* CollectColorCell.swift in Sources */,
+				74354D9923014E2800AF87D4 /* Joke.swift in Sources */,
+				74354D942300B4E600AF87D4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

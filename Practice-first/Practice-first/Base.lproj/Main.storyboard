@@ -35,18 +35,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fal-Uy-3mh">
-                                <rect key="frame" x="163" y="429.5" width="88" height="37"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <rect key="frame" x="155" y="427.5" width="104" height="41"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                 <state key="normal" title="LotteryHint"/>
                                 <connections>
                                     <segue destination="h7x-3W-Dv4" kind="show" id="3fr-kh-6R7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cs-H2-hme">
+                                <rect key="frame" x="170" y="498.5" width="74" height="41"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="ToDoList"/>
+                                <connections>
+                                    <segue destination="P93-FN-kRi" kind="show" id="Qd3-KU-20i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsm-gi-gxe">
+                                <rect key="frame" x="163.5" y="356.5" width="87" height="41"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="Collection"/>
+                                <connections>
+                                    <segue destination="yqF-Dy-D8B" kind="show" id="7L5-jv-lra"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="fal-Uy-3mh" firstAttribute="top" secondItem="tsm-gi-gxe" secondAttribute="bottom" constant="30" id="48h-Kl-a31"/>
+                            <constraint firstItem="3cs-H2-hme" firstAttribute="centerX" secondItem="rBd-Cy-7Ii" secondAttribute="centerX" id="6fa-Qw-ds2"/>
+                            <constraint firstItem="tsm-gi-gxe" firstAttribute="centerX" secondItem="rBd-Cy-7Ii" secondAttribute="centerX" id="E7u-GH-ijj"/>
                             <constraint firstItem="fal-Uy-3mh" firstAttribute="centerX" secondItem="rBd-Cy-7Ii" secondAttribute="centerX" id="Knu-ae-EDx"/>
                             <constraint firstItem="fal-Uy-3mh" firstAttribute="centerY" secondItem="rBd-Cy-7Ii" secondAttribute="centerY" id="O9g-DA-6QM"/>
+                            <constraint firstItem="3cs-H2-hme" firstAttribute="top" secondItem="fal-Uy-3mh" secondAttribute="bottom" constant="30" id="q0R-Fn-JSf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hR9-mq-Da8"/>
                     </view>
@@ -56,13 +76,29 @@
             </objects>
             <point key="canvasLocation" x="-7" y="368"/>
         </scene>
+        <!--CollectColor-->
+        <scene sceneID="ovQ-VB-W0n">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CollectColor" storyboardName="CollectColor" id="yqF-Dy-D8B" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHS-88-Ava" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="321"/>
+        </scene>
         <!--LotteryHint-->
         <scene sceneID="sR1-lB-3Qq">
             <objects>
                 <viewControllerPlaceholder storyboardName="LotteryHint" id="h7x-3W-Dv4" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJ8-Pc-lZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="571" y="368"/>
+            <point key="canvasLocation" x="570" y="351"/>
+        </scene>
+        <!--Todolist-->
+        <scene sceneID="F8I-BD-GQr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Todolist" id="P93-FN-kRi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kV9-NM-McL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="385"/>
         </scene>
     </scenes>
 </document>

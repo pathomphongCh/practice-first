@@ -17,6 +17,7 @@ class LotteryHintController: UIViewController {
         let number = Int.random(in: 0...999999)
         let limitNumber = String(format: "%06d", number)
         LotteryNumber.text = limitNumber
+        RandomButton.setTitle("Random Again", for: .normal)
     }
     @IBAction func PressedRandomColor() {
         let rgbaRed = CGFloat(Float.random(in: 0...1))
@@ -31,7 +32,10 @@ class LotteryHintController: UIViewController {
         }
     }
     @IBAction func PressedLimitation() {
-        
+        pressCount += 1
+        if pressCount > 20 {
+            RandomButton.isEnabled = false
+        }
     }
     
     override func viewDidLoad() {

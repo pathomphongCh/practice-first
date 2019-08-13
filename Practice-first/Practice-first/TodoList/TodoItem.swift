@@ -7,3 +7,7 @@
 //
 
 import Foundation
+struct TodoItem {
+    let title: String
+    let isChecked: Bool
+}
