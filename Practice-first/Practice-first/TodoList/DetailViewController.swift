@@ -21,11 +21,14 @@ UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     //-------------day3 -afternoon---------
     
     func setTitle(title : String) {
+//        item = title
+//
         titleLabel.text = title
     }
     override func viewWillAppear(_ animated: Bool) {

@@ -39,6 +39,18 @@ class TodoListController: UIViewController {
             tableView.deleteRows(at:[indexPath] , with: .automatic)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail",
+            let viewController = segue.destination as? DetailViewController,
+            let todoItem = sender as? TodoItem {
+
+//            viewController.setTitle(title: todoItem.title)
+          viewController.item = todoItem.title
+            
+            
+        }
+    }
 }
 
 extension TodoListController: UITableViewDataSource{
@@ -74,16 +86,25 @@ extension TodoListController: TodoItemTableViewCellDelegate {
 
 
 //------------------------Tap list to view detail------------------------------
+//extension TodoListController: UITableViewDelegate {
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let storyboard = UIStoryboard(name: "DetailView", bundle: nil)
+//        guard let detailViewController = storyboard.instantiateViewController(withIdentifier: "DetailViewControllerId") as? DetailViewController else{
+//            return
+//        }
+//        let item = todoList[indexPath.item].title
+//        detailViewController.item = item
+//        self.present(detailViewController, animated: true, completion: nil)
+//    }
+//}
 extension TodoListController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "DetailView", bundle: nil)
-        guard let detailViewController = storyboard.instantiateViewController(withIdentifier: "DetailViewControllerId") as? DetailViewController else{
-            return
-        }
-        let item = todoList[indexPath.item].title
-        detailViewController.item = item
-        self.present(detailViewController, animated: true, completion: nil)
+        if todoList.indices.contains(indexPath.row){
+            let todoItem = todoList[indexPath.row]
+        self.performSegue(withIdentifier: "showDetail", sender: todoItem)
     }
+    }
+    
 }
 
 

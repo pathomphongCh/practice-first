@@ -105,11 +105,20 @@
                     <connections>
                         <outlet property="tableView" destination="E2B-wK-h6g" id="Kpc-1u-haT"/>
                         <outlet property="todoTextField" destination="54Q-R1-6gG" id="EOW-e8-CVj"/>
+                        <segue destination="1EZ-7W-paJ" kind="show" identifier="showDetail" id="Sm8-Q7-A6A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOA-bn-0Mh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-328.98550724637681" y="-294.64285714285711"/>
+        </scene>
+        <!--detailView-->
+        <scene sceneID="W5d-wj-7dQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailView" id="1EZ-7W-paJ" userLabel="detailView" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DcB-YS-INU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="-425"/>
         </scene>
     </scenes>
 </document>

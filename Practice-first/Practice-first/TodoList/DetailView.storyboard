@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h3i-eB-abb">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,31 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThT-2s-yUd">
-                                <rect key="frame" x="20" y="64" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5T-KN-bhM">
+                                <rect key="frame" x="186" y="438" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o13-T9-fcX">
-                                <rect key="frame" x="184" y="105" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="didTapButton:" destination="h3i-eB-abb" eventType="touchUpInside" id="TYw-RG-wz5"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="o13-T9-fcX" firstAttribute="centerX" secondItem="sVi-Md-YeE" secondAttribute="centerX" id="YaN-ab-Sxi"/>
-                            <constraint firstItem="o13-T9-fcX" firstAttribute="top" secondItem="ThT-2s-yUd" secondAttribute="bottom" constant="20" id="a41-r2-OUA"/>
-                            <constraint firstItem="ThT-2s-yUd" firstAttribute="top" secondItem="1Hv-wZ-83b" secondAttribute="top" constant="20" id="cuA-Ce-W37"/>
-                            <constraint firstItem="ThT-2s-yUd" firstAttribute="leading" secondItem="1Hv-wZ-83b" secondAttribute="leading" constant="20" id="dCX-BS-bQJ"/>
+                            <constraint firstItem="L5T-KN-bhM" firstAttribute="centerY" secondItem="sVi-Md-YeE" secondAttribute="centerY" id="Jk0-tR-Kwk"/>
+                            <constraint firstItem="L5T-KN-bhM" firstAttribute="centerX" secondItem="sVi-Md-YeE" secondAttribute="centerX" id="U1b-eH-2gw"/>
+                            <constraint firstItem="L5T-KN-bhM" firstAttribute="centerY" secondItem="sVi-Md-YeE" secondAttribute="centerY" id="u2h-Je-mhn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Hv-wZ-83b"/>
                     </view>
                     <connections>
-                        <outlet property="titleLabel" destination="ThT-2s-yUd" id="4Fc-fd-HoJ"/>
+                        <outlet property="titleLabel" destination="L5T-KN-bhM" id="oye-at-ADi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ob4-Zd-TBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
